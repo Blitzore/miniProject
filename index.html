@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodsic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="images/title.png" alt="" class="imgTitle" />
+        <p>Daftar lagu sesuai mood kamu hari ini</p>
+      </div>
+    </header>
+    <main>
+      <h1>Pilih mood anda hari ini</h1>
+
+      <!-- Desktop Container -->
+      <div class="container desktop-container">
+        <div class="happy" id="happy">
+          <img src="images/happy.png" alt="Happy Emoji" />
+          <p>Musik yang akan membuat kamu senang</p>
+        </div>
+        <div class="angry" id="angry">
+          <img src="images/angry.png" alt="Angry Emoji" />
+          <p>Musik yang akan melepaskan amarahmu</p>
+        </div>
+        <div class="sad" id="sad">
+          <img src="images/sad.png" alt="Sad Emoji" />
+          <p>Musik yang akan menemani kesedihanmu</p>
+        </div>
+      </div>
+
+      <!-- Mobile Carousel Container -->
+      <div class="carousel-container mobile-carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-items">
+            <div class="carousel-item happy" id="happy-mobile">
+              <img src="images/happy.png" alt="Happy Emoji" />
+              <p>Musik yang akan membuat kamu senang</p>
+            </div>
+            <div class="carousel-item angry" id="angry-mobile">
+              <img src="images/angry.png" alt="Angry Emoji" />
+              <p>Musik yang akan melepaskan amarahmu</p>
+            </div>
+            <div class="carousel-item sad" id="sad-mobile">
+              <img src="images/sad.png" alt="Sad Emoji" />
+              <p>Musik yang akan menemani kesedihanmu</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <div class="carousel-dots"></div>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+
+      <div id="playlist" class="playlist">
+        <ul id="song-list"></ul>
+      </div>
+      <audio id="audio-player" controls></audio>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
